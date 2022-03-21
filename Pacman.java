@@ -99,18 +99,22 @@ public class Pacman extends Actor
             offsetX=0;
             offsetY = -OFFSET;
             direction = UP;
+            setRotation(-90);
         }else if(Greenfoot.isKeyDown("DOWN")){
             offsetX=0;
             offsetY = OFFSET;
             direction=DOWN;
+            setRotation(90);
         }else if(Greenfoot.isKeyDown("RIGHT")){
             offsetY=0;
             offsetX = OFFSET;
             direction=RIGHT;
+            setRotation(0);
         }else if(Greenfoot.isKeyDown("LEFT")){
             offsetY=0;
             offsetX = -OFFSET;
             direction=LEFT;
+            setRotation(180);
         }
     }
 
